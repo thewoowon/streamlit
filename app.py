@@ -17,7 +17,7 @@ body {
 
 st.title("기자들을 위한 GPT-4o")
 
-article = st.text_area("GPT-4o에게 물어보기", "여기에 기사를 입력하세요.", height=400)
+article = st.text_area(label_visibility=False,placeholder="여기에 기사를 입력하세요.", height=400)
 
 prompt = f"""
 당신은 매우 유능한 기자이자 일러스트레이터입니다.
