@@ -12,7 +12,7 @@ def get_sequence_label(count):
     return labels[count - 1] if count <= len(labels) else "다음"
 
 
-api_key = os.environ.get("OPENAI_API_KEY")
+api_key = st.secrets["OPENAI_API_KEY"]
 
 client = OpenAI(api_key=api_key)
 
