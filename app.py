@@ -421,6 +421,7 @@ elif selected == "About":
     해당 서비스는 기자의 업무 효율을 최대 15% 높여줍니다.
     """
     )
+    st.image("images/about.jpeg")
 
 
 # 기사 작성에만 집중하세요. 나머지는 AI가 할게요
