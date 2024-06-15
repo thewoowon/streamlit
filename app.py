@@ -4,6 +4,7 @@ import streamlit as st
 from openai import OpenAI
 from streamlit_option_menu import option_menu
 import ast
+import os
 
 
 def get_sequence_label(count):
@@ -11,7 +12,10 @@ def get_sequence_label(count):
     return labels[count - 1] if count <= len(labels) else "다음"
 
 
-client = OpenAI()
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+
+
+client = OpenAI(api_key=OPENAI_API_KEY)
 
 st.markdown(
     """
